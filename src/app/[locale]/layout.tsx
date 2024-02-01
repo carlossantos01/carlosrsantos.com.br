@@ -8,8 +8,8 @@ import { dir } from "i18next";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  applicationName: "",
-  title: "",
+  applicationName: "carlosrsantos.com.br",
+  title: "Carlos Santos",
   icons: [
     {
       url: "",
