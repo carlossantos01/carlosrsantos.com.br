@@ -1,5 +1,5 @@
-import StartupThunkProvider from "@/components/common/startup-thunk-provider";
-import StoreProvider from "@/components/common/store-provider";
+import StartupThunkProvider from "@/components/providers/startup-thunk-provider";
+import StoreProvider from "@/components/providers/store-provider";
 import { Params } from "@/domain/model/params";
 import { i18nConfig } from "@/infrastructure/config/i18n/i18nConfig";
 import "@/infrastructure/theme/fonts.css";
@@ -8,21 +8,21 @@ import { dir } from "i18next";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  applicationName: "carlosrsantos.com.br",
-  title: "Carlos Santos",
+  applicationName: "NextJs Template",
+  title: "NextJs Template",
   icons: [
     {
-      url: "",
+      url: "https://imgur.com/phiN99C",
       sizes: "64x64 32x32 24x24 16x16",
       type: "image/x-icon",
     },
     {
-      url: "",
+      url: "https://imgur.com/phiN99C",
       type: "image/png",
       sizes: "192x192",
     },
     {
-      url: "",
+      url: "https://imgur.com/phiN99C",
       type: "image/png",
       sizes: "512x512",
     },

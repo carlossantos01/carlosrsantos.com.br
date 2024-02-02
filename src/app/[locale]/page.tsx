@@ -1,5 +1,5 @@
 import AccountModal from "@/components/common/account-modal";
-import TranslationsProvider from "@/components/common/translations-provider";
+import TranslationsProvider from "@/components/providers/translations-provider";
 import { Params } from "@/domain/model/params";
 import initTranslations from "@/infrastructure/config/i18n/i18nConfig";
 
@@ -7,7 +7,7 @@ interface HomeProps {
   params: Params;
 }
 
-const i18nNamespaces = ["home"];
+const i18nNamespaces = ["home", "account"];
 
 const Home: React.FC<HomeProps> = async ({ params: { locale } }) => {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);

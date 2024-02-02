@@ -1,5 +1,5 @@
-import { AuthorizationHeader } from "@/domain/enums/api/apiConfig";
-import { ApiParams } from "@/domain/model/api/apiConfig";
+import { AuthorizationHeader } from "@/domain/enums/api/apiType";
+import { ApiParams } from "@/domain/model/api/api";
 import appConfig from "@/infrastructure/config/appConfig";
 import {
   BaseQueryApi,
@@ -33,4 +33,4 @@ const createNewApi = ({
   });
 };
 
-export const api = createNewApi({ apiName: "GtBankerApi" });
+export const apiDefault = createNewApi({ apiName: "apiDefault" });

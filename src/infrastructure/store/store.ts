@@ -1,10 +1,10 @@
-import { api } from "@/data/api/apiConfig";
+import { apiDefault } from "@/data/api/apiConfig";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import account from "./slice/account";
 import authentication from "./slice/authentication";
 
 export const reducer = combineReducers({
-  [api.reducerPath]: api.reducer,
+  [apiDefault.reducerPath]: apiDefault.reducer,
   authentication,
   account,
 });
@@ -13,7 +13,7 @@ export const makeStore = () => {
   return configureStore({
     reducer,
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(api.middleware),
+      getDefaultMiddleware().concat(apiDefault.middleware),
   });
 };
 

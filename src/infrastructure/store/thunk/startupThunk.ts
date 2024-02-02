@@ -9,6 +9,7 @@ export const prepareApp = createAsyncThunk(
     const token = AuthUtils.getAuthToken();
     //#TODO: CASO NÃO TENHA TOKEN, REDIRECIONAR PARA O LOGIN?
     if (token) {
+      console.log(token);
       thunkApi.dispatch(accountApi.endpoints.getAccount.initiate());
       thunkApi.dispatch(setAuthentication());
     }

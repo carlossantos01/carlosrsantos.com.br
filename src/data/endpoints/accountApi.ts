@@ -1,9 +1,9 @@
-import { CatchResponseError } from "@/domain/model/api/apiConfig";
+import { CatchResponseError } from "@/domain/model/api/api";
 import { UserAccount } from "@/domain/model/user";
 import { setAccount } from "@/infrastructure/store/slice/account";
-import { api } from "../api/apiConfig";
+import { apiDefault } from "../api/apiConfig";
 
-export const accountApi = api.injectEndpoints({
+export const accountApi = apiDefault.injectEndpoints({
   endpoints: (builder) => ({
     getAccount: builder.query<UserAccount, void>({
       query: () => ({
