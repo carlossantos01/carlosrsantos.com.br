@@ -1,7 +1,7 @@
-import AccountModal from "@/components/common/account-modal";
 import TranslationsProvider from "@/components/providers/translations-provider";
 import { Params } from "@/domain/model/params";
 import initTranslations from "@/infrastructure/config/i18n/i18nConfig";
+import Image from "next/image";
 
 interface HomeProps {
   params: Params;
@@ -19,7 +19,12 @@ const Home: React.FC<HomeProps> = async ({ params: { locale } }) => {
       resources={resources}
     >
       <main>
-        <AccountModal />
+        <Image
+          src="/assets/icons/icon64x64.png"
+          alt="Vercel Logo"
+          width={72}
+          height={16}
+        />
       </main>
     </TranslationsProvider>
   );
