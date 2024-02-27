@@ -38,4 +38,4 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
   );
 };
 
-export default header;
+export default Header;
