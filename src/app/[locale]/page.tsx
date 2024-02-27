@@ -1,7 +1,7 @@
+import Header from "@/components/navigation/header";
 import TranslationsProvider from "@/components/providers/translations-provider";
 import { Params } from "@/domain/model/params";
 import initTranslations from "@/infrastructure/config/i18n/i18nConfig";
-import Image from "next/image";
 
 interface HomeProps {
   params: Params;
@@ -9,22 +9,20 @@ interface HomeProps {
 
 const i18nNamespaces = ["home", "account"];
 
-const Home: React.FC<HomeProps> = async ({ params: { locale } }) => {
-  const { t, resources } = await initTranslations(locale, i18nNamespaces);
+const Home: React.FC<HomeProps> = async ({ params }) => {
+  const { t, resources } = await initTranslations(
+    params.locale,
+    i18nNamespaces
+  );
 
   return (
     <TranslationsProvider
       namespaces={i18nNamespaces}
-      locale={locale}
+      locale={params.locale}
       resources={resources}
     >
       <main>
-        <Image
-          src="/assets/icons/icon64x64.png"
-          alt="Vercel Logo"
-          width={72}
-          height={16}
-        />
+        <Header params={params} />
       </main>
     </TranslationsProvider>
   );
