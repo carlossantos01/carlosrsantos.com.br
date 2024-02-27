@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
       locale={locale}
       resources={resources}
     >
-      <header className="">
+      <nav className="">
         <h1>{t("header.title")}</h1>
         <div className="">
           <nav>
@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
             </ul>
           </nav>
         </div>
-      </header>
+      </nav>
     </TranslationsProvider>
   );
 };
