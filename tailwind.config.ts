@@ -18,6 +18,8 @@ const config: Config = {
       "3xl": "1536px",
     },
     colors: {
+      redFiap: "#ed145b",
+      redEsparta: "#d9342c",
       black: "#000000",
       darkGrey: "#2d3e46",
       white: "#ffffff",

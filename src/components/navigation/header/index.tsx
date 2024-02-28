@@ -31,20 +31,25 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
             </h1>
           </div>
           <div className="flex items-center justify-between gap-8">
-            <a href="/" className="font-frutiger text-md text-scorpionGrey">
+            <a
+              href="/"
+              className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
+            >
               {t("home")}
             </a>
             <a
-              href="/about"
-              className="font-frutiger text-md text-scorpionGrey"
+              href="/#"
+              className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
             >
               {t("about")}
             </a>
             <a
-              href="/contact"
-              className="font-frutiger text-md text-scorpionGrey"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://docs.google.com/document/d/1wbDwf4oXiAe8Ff5CZGZwY1azBWzq8rljrRBwwqRQSpc/edit?usp=sharing"
+              className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
             >
-              {t("resume")}↗
+              {t("resume")}
             </a>
           </div>
         </div>
