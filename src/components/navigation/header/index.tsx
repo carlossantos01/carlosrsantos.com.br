@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
               width={45}
               height={45}
             />
-            <h1 className="font-frutigerSemibold text-xl text-scorpionGrey">
+            <h1 className="font-frutigerSemibold text-xl text-darkGrey">
               Carlos Santos
             </h1>
           </div>

@@ -24,7 +24,7 @@ const HomeLP: React.FC<HomeLPProps> = ({ params: { locale } }) => {
             <span className="text-scorpionGrey">
               {t("workAt")}{" "}
               <a
-                href="http://"
+                href="https://esparta.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-redEsparta"
@@ -35,7 +35,7 @@ const HomeLP: React.FC<HomeLPProps> = ({ params: { locale } }) => {
             <span className="text-scorpionGrey">
               {t("collage")}{" "}
               <a
-                href="http://"
+                href="https://www.fiap.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-redFiap"
