@@ -14,7 +14,7 @@ const HomeLP: React.FC<HomeLPProps> = ({ params: { locale } }) => {
 
   return (
     <section className="w-full h-full">
-      <div className="max-w-4xl m-auto flex justify-between items-center mt-16">
+      <div className="max-w-4xl m-auto p-4 flex flex-col md:flex-row justify-between items-center mt-2 md:mt-16">
         <div className="flex flex-col">
           <h1 className="font-frutiger text-xl text-scorpionGrey">
             {t("title")}
@@ -45,7 +45,7 @@ const HomeLP: React.FC<HomeLPProps> = ({ params: { locale } }) => {
             </span>
           </div>
         </div>
-        <div className="">
+        <div className="mt-6">
           <Image
             src="/assets/images/gif.gif"
             className="mix-blend-multiply"

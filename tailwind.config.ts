@@ -20,6 +20,12 @@ const config: Config = {
     colors: {
       redFiap: "#ed145b",
       redEsparta: "#d9342c",
+      redClose: "#FC5753",
+      borderRedClose: "#DF4744",
+      yellowMinimize: "#FDBC40",
+      borderYellowMinimize: "#DE9F34",
+      greenExtend: "#36C84B",
+      borderGreenExtend: "#27AA35",
       black: "#000000",
       darkGrey: "#2d3e46",
       white: "#ffffff",
