@@ -1,4 +1,3 @@
-import About from "@/components/layout/about";
 import HomeLP from "@/components/layout/home-lp";
 import Footer from "@/components/navigation/footer";
 import Header from "@/components/navigation/header";
@@ -28,7 +27,6 @@ const Home: React.FC<HomeProps> = async ({ params }) => {
         <Header params={params} />
         <HomeLP params={params} />
         <Footer params={params} />
-        <About params={params} />
       </main>
     </TranslationsProvider>
   );
