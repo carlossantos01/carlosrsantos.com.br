@@ -1,12 +1,12 @@
 import {
   AuthorizationHeader,
   ContentTypeHeader,
-} from "@/domain/enums/api/apiConfig";
+} from "@/domain/enums/api/apiType";
 import {
   ApiErrorResponse,
   CustomFetchBaseQueryError,
   CustomQueryReturnValue,
-} from "@/domain/model/api/apiConfig";
+} from "@/domain/model/api/api";
 import AuthUtils from "@/infrastructure/utils/authUtils";
 import {
   BaseQueryApi,
@@ -21,7 +21,7 @@ export const prepareHeadersWithAuth = (
 ): Headers => {
   const token = AuthUtils.getAuthToken();
   if (token) {
-    headers.set("Authorization", `${authorizationHeader} ${token.id_token}`);
+    headers.set("Authorization", `${authorizationHeader} ${token.idToken}`);
   }
   headers.set("Content-Type", ContentTypeHeader.JSON);
   return headers;

@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next/initReactI18next";
 
 export const i18nConfig = {
   locales: ["pt-BR", "en-US"],
+  // locales: ["pt-BR", "en-US"], Use for english language
   defaultLocale: "pt-BR",
   basePath: process.env.NEXT_PUBLIC_BASE_HREF,
 };

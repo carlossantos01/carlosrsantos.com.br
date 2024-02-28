@@ -10,8 +10,8 @@ if [ "$(uname)" == "Darwin" ]; then
         CURRENT_IP_ADDRESS=$(ifconfig en1 | grep inet | grep -v inet6 | cut -d ' ' -f2)
     fi
 
-    find .env.development -type f | xargs sed -i '' "s|IP|http://${CURRENT_IP_ADDRESS}:3001|g"
-    find .env.development -type f | xargs sed -i '' "s|$OLD_DEVELOPMENT|http://${CURRENT_IP_ADDRESS}:3001|g"
+    find .env.development -type f | xargs sed -i '' "s|IP|http://${CURRENT_IP_ADDRESS}:3000|g"
+    find .env.development -type f | xargs sed -i '' "s|$OLD_DEVELOPMENT|http://${CURRENT_IP_ADDRESS}:3000|g"
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     echo "Loading environment for Linux"
 
@@ -20,8 +20,8 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     OLD_DEVELOPMENT=$(cat .env.development | grep "NEXT_PUBLIC_API_URL" | cut -d'=' -f2)
 
 
-    find .env.development -type f | xargs sed -i "s|IP|http://${CURRENT_IP_ADDRESS}:3001|g"
-    find .env.development -type f | xargs sed -i "s|$OLD_DEVELOPMENT|http://${CURRENT_IP_ADDRESS}:3001|g"
+    find .env.development -type f | xargs sed -i "s|IP|http://${CURRENT_IP_ADDRESS}:3000|g"
+    find .env.development -type f | xargs sed -i "s|$OLD_DEVELOPMENT|http://${CURRENT_IP_ADDRESS}:3000|g"
 else 
     echo "Could not configure environment"
     exit 1

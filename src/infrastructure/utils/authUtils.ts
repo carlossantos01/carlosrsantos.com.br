@@ -9,7 +9,7 @@ class AuthUtils {
 
   static getAuthToken(): Token | null {
     const token: string | null = localStorage.getItem(this.AUTH_TOKEN_KEY);
-    return token === null ? null : { id_token: token };
+    return token === null ? null : { idToken: token };
   }
 
   static readonly removeAuthToken = (): void => {

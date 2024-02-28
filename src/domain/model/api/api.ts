@@ -1,7 +1,7 @@
 import {
   AuthorizationHeader,
   ContentTypeHeader,
-} from "@/domain/enums/api/apiConfig";
+} from "@/domain/enums/api/apiType";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 
 export interface ApiParams {

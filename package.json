@@ -1,10 +1,9 @@
 {
-  "name": "nextjs-14-template",
+  "name": "carlosrsantos.com.br",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev-proxy": "chmod +x env.localhost.sh && ./env.localhost.sh && next dev",
-    "dev": "next dev",
+    "dev": "chmod +x env.localhost.sh && ./env.localhost.sh && next dev",
     "build": "next build",
     "build:development": "NODE_ENV=development next build",
     "build:staging": "NODE_ENV=staging next build",
@@ -12,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:sonar": "next lint --format json --output-file eslint-report.json",
-    "environment": "chmod +x env.sh && ./env.sh"
+    "environment": "chmod +x env.sh && ./env.sh",
+    "husky": "husky install"
   },
   "engines": {
     "node": "20.x"
