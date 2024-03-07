@@ -26,6 +26,8 @@ const config: Config = {
       borderYellowMinimize: "#DE9F34",
       greenExtend: "#36C84B",
       borderGreenExtend: "#27AA35",
+      blueKenzie: "#0001fc",
+      greenIFSP: "#76ca3f",
       black: "#000000",
       darkGrey: "#2d3e46",
       white: "#ffffff",
