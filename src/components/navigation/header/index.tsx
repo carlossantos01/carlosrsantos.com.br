@@ -37,16 +37,16 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
             >
               {t("home")}
             </a>
-            <a
+            {/* <a
               href="/#"
               className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
             >
               {t("about")}
-            </a>
+            </a> */}
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://docs.google.com/document/d/1wbDwf4oXiAe8Ff5CZGZwY1azBWzq8rljrRBwwqRQSpc/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1g0cpX93B7f5QW00GENoCseXOx45jGhbB/view?usp=sharing"
               className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
             >
               {t("resume")}
