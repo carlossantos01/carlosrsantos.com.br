@@ -1,3 +1,4 @@
+import CustomButton from "@/components/common/custom-button";
 import TranslationsProvider from "@/components/providers/translations-provider";
 import { Params } from "@/domain/model/params";
 import initTranslations from "@/infrastructure/config/i18n/i18nConfig";
@@ -18,7 +19,7 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
       resources={resources}
     >
       <header className="w-full h-20 px-4">
-        <div className="w-full h-full max-w-5xl m-auto flex justify-between items-center">
+        <div className="w-full h-full max-w-4xl m-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Image
               src="/assets/icons/icon64x64.png"
@@ -26,31 +27,23 @@ const Header: React.FC<HeaderProps> = async ({ params: { locale } }) => {
               width={45}
               height={45}
             />
-            <h1 className="font-frutigerSemibold text-xl text-darkGrey hidden md:block">
+            <h1 className="font-frutigerSemibold text-xl text-darkGrey hidden">
               Carlos Santos
             </h1>
           </div>
-          <div className="flex items-center justify-between gap-8">
-            <a
-              href="/"
-              className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
-            >
-              {t("home")}
-            </a>
-            {/* <a
-              href="/#"
-              className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
-            >
-              {t("about")}
-            </a> */}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1g0cpX93B7f5QW00GENoCseXOx45jGhbB/view?usp=sharing"
-              className="font-frutiger text-md text-scorpionGrey hover:text-darkGrey"
-            >
-              {t("resume")}
-            </a>
+          <div className="flex items-center justify-between gap-4">
+            <CustomButton
+              icon="/assets/icons/github.svg"
+              color="red"
+              href="https://github.com/carlossantos01"
+              alt="GitHub"
+            />
+            <CustomButton
+              icon="/assets/icons/linkedin.svg"
+              color="red"
+              href="https://www.linkedin.com/in/carloseorsantos/"
+              alt="linkedin"
+            />
           </div>
         </div>
       </header>
