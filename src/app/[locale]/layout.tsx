@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   applicationName: "carlosrsantos.com.br",
-  title: "Carlos Santos - Software Engineer",
+  title: "Carlos Santos - Software Developer",
   icons: [
     {
       url: "/assets/icons/icon64x64.png",

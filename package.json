@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "chmod +x env.localhost.sh && ./env.localhost.sh && next dev",
+    "dev": "chmod +x env.localhost.sh && ./env.localhost.sh && node get-ip.js && next dev",
     "build": "next build",
     "build:development": "NODE_ENV=development next build",
     "build:staging": "NODE_ENV=staging next build",
