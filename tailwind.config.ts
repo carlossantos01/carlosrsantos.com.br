@@ -8,6 +8,27 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      animation: {
+        snow: 'snowfall 10s linear infinite',
+        sway: 'sway 4s ease-in-out infinite',
+        'infinite-scroll': 'infinite-scroll 50s linear infinite',
+      },
+      keyframes: {
+        snowfall: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(100vh)', opacity: '0.5' },
+        },
+        sway: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-10px)' },
+        },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },
+    },
     screens: {
       xs: "320px",
       sm: "480px",
