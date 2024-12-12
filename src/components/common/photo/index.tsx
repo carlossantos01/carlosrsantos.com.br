@@ -35,6 +35,8 @@ const Photo = () => {
           src="/assets/images/christmas.png"
           className="absolute rotate-180 translate-y-[-25px]"
           alt="decoration"
+          unoptimized={true}
+          priority
         />
       </div>
     </div>
