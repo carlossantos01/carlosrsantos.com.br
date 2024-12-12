@@ -1,5 +1,6 @@
 "use client";
 import CustomButton from "@/components/common/custom-button";
+import Photo from "@/components/common/photo";
 import { Params } from "@/domain/model/params";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
@@ -48,17 +49,7 @@ const HomeLP: React.FC<HomeLPProps> = ({ params: { locale } }) => {
             </span>
           </div>
         </div>
-        <div className="mt-6 md:mt-0">
-          <Image
-            src="/assets/images/me.jpg"
-            className="md:rounded-l-[50%] rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
-            alt="Home LP Modal"
-            width={350}
-            height={300}
-            unoptimized={true}
-            priority
-          />
-        </div>
+        <Photo />
       </div>
     </section>
   );
